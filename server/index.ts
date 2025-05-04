@@ -1,7 +1,6 @@
 import express, { Request, Response, NextFunction } from "express";
 import path from "path";
 import dotenv from "dotenv";
-import axios from "axios";
 import { registerRoutes } from "./routes";
 import { setupVite, log } from "./vite";
 
