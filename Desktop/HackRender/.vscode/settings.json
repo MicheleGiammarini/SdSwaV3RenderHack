@@ -1,4 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "/subscriptions/a004774b-ece1-4b79-9597-e99f0fa5acb6/resourceGroups/My/providers/Microsoft.Web/sites/MicheleGiammariniSrAssocSDSoftwareEngineering",
-    "appService.deploySubpath": "."
-}
