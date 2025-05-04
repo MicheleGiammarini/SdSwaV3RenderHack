@@ -71,6 +71,23 @@ app.use((req, res, next) => {
   });
 })();
 
+const url = `https://yourappname.onrender.com/` ; // Sostituisci con l'URL del tuo rendering 
+const interval = 30000 ; // Intervallo in millisecondi (30 secondi) 
+
+function  reloadWebsite ( ) { 
+  axios. get (url) 
+    . then ( response => { 
+      console . log ( `Ricaricato alle ${ new  Date ().toISOString()} : Codice di stato ${response.status} ` ); 
+    }) 
+    . catch ( error => { 
+      console . error ( `Errore di ricaricamento alle ${ new  Date ().toISOString()} :` , error. message ); 
+    }); 
+
+
+
+setInterval (reloadWebsite, interval);
+
+
 // Serve static files in production (after build)
 function serveStatic(app: express.Application) {
   const staticDir = path.join(__dirname, "dist"); // Adjust path to Vite's build output
