@@ -71,8 +71,8 @@ app.use((req, res, next) => {
   });
 })();
 
-const url = `https://yourappname.onrender.com/` ; // Sostituisci con l'URL del tuo rendering 
-const interval = 30000 ; // Intervallo in millisecondi (30 secondi) 
+const url = "https://sdswav3renderhack.onrender.com"; 
+const interval = 30000 ; 
 
 function  reloadWebsite ( ) { 
   axios. get (url) 
