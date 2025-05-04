@@ -3,7 +3,7 @@ import path from "path";
 import dotenv from "dotenv";
 import { registerRoutes } from "./routes";
 import { setupVite, log } from "./vite";
-
+import axios from "axios";
 dotenv.config();
 
 const app = express();
